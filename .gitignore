@@ -1,0 +1,11 @@
+# 销售相关文档,不上传开源仓库
+代理合作协议.md
+使用须知与免责声明.md
+安装使用教程.md
+build.bat
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+*.log
+chrome-profile/
