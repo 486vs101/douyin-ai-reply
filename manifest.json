@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "抖音私信 AI 自动回复",
+  "version": "1.0.0",
+  "description": "基于 DeepSeek AI 自动回复抖音私信,采用拟人化操作 + 真实抖音 DOM 选择器",
+  "permissions": ["storage", "unlimitedStorage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://api.deepseek.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.douyin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
